@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Geprek Bo.oZz.id</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="Icon" href="imgs/logo-me.jpg">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Css/Style.css">
+    <!-- Icon Dev -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <navbar>
+        <ul class="ul-navbar">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="index.html">Menu</a>
+            </li>
+            <li>
+                <a href="#">Order Now</a>
+            </li>
+        </ul>
+    </navbar>
+    <!-- akhir navbar -->
+
+    <div class="img">
+        <img src="assets/imgs/logo.jpg" width="150px" style="border-radius: 50%;" alt="">
+    </div>
+
+    <!-- info -->
+    <div class="informasi">
+        <a href="eror.html" class="informasi-2">
+            <i class="bi bi-whatsapp icon"></i>
+            <p>WhatsApp</p>
+        </a>
+        <a href="eror.html" class="informasi-2">
+            <i class="bi bi-facebook icon"></i>
+            <p>Facebook</p>
+        </a>
+        <a href="eror.html" class="informasi-2">
+            <i class="bi bi-geo-alt icon"></i>
+            <p>Lokasi</p>
+        </a>
+    </div>
+    <!-- akhir info -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!--type js  -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ["SELAMAT DATANG", "Geprek Bo.oZz", "Order Sekarang"],
+            typeSpeed: 80,
+            backSpeed: 50,
+            loop: true,
+            showCursor: false,
+        });
+
+        // onscroll
+        const fadeElements = document.querySelectorAll('.fade-in ,.fade-out, .start-in, .start-out');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show'); // hilangkan kalau keluar layar
+                }
+            });
+        }, { threshold: 0.2 });
+
+        fadeElements.forEach(el => observer.observe(el));
+    </script>
+</body>
+
+<footer class="footer">
+    <p><i class="bi bi-c-circle"></i>Geprek Bo.oZz.id</p>
+</footer>
+
+
+</html>

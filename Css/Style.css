@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 227, 189);
+}
+
+.navbar-bg{
+    background: rgba(255, 255, 255, 0.2); /* transparan */
+  backdrop-filter: blur(10px); /* efek blur */
+  -webkit-backdrop-filter: blur(10px); /* untuk Safari */
+
+}
+
+.ul-navbar{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(224, 142, 34);
+
+}
+
+.ul-navbar li{
+    padding: 14px;
+    list-style: none;
+}
+
+.ul-navbar li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+
+
+}
+
+.bg-isi{
+ background-color: antiquewhite;
+ margin: 0;
+}
+
+.ketikan{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding-top: 10%;
+}
+
+.ketikan h2{
+    color: rgb(255, 94, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.img{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.deskripsi{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top:20px;
+    margin-left: 10px;
+}
+
+.deskripsi p{
+margin-right: 24px;
+font-family: serif,"goramond";
+}
+
+.deskripsi p i{
+    color: rgb(253, 80, 0);
+    font-weight: 900;
+}
+
+.harga{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.menu{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menu h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(255, 145, 0);
+}
+.foto-menu{
+    border-color: rgb(255, 145, 0);
+    border: 7px;
+    border-style: solid;
+
+}
+
+.judul-menu{
+    font-weight: bold;
+    margin: 0;
+    font-family: sans-serif,"verdana";
+}
+
+.harga-menu{
+    font-weight: 900;
+    color: rgb(255, 123, 0);
+}
+
+.button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.button a{
+    list-style: none;
+    font-style: none;
+    text-decoration: none;
+}
+
+.button p{
+ background-color: rgb(255, 153, 0);
+ color: black;
+ padding: 10px;
+ border-radius: 3px;
+ padding-left: 40px;
+ padding-right: 40px;
+}
+
+.footer{
+    justify-content: center;
+    display: flex;
+    margin: 0;
+}
+
+.footer i{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-right: 5px ;
+}
+
+.footer p{
+    color: rgb(255, 166, 0);
+    font-weight: bold;
+    
+}
+
+ /* Order Html */
+
+ .informasi{
+    margin-bottom: 130px;
+ }
+
+ .informasi-2{
+   display: flex;
+   color: black;
+   text-decoration: none;
+ }
+
+ .informasi-2 {
+    background-color: rgb(255, 115, 0);
+    margin: 25px;
+    padding-top: 14px;
+    border-radius: 5px;
+
+ }
+
+ .informasi-2 p{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+
+ }
+
+ .icon{
+    font-size: 30px;
+    margin-left: 20px ;
+    margin-right: 10px ;
+    margin-bottom: 10px;
+ }
+
+ /* responsif */ 
+
+ @media (min-width: 768px){
+    .box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+        align-items: center;
+        gap: 20px;
+
+    }
+ }
